@@ -1,0 +1,27 @@
+html { 
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a, a:hover, a:focus, a:active{
+  text-decoration: none;
+}
+
+.no-padding{
+	padding:0;
+}
+
+.img-height-responsive{
+  height:100%;
+  width:auto;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 100%;
+    overflow-x:hidden;
+}
