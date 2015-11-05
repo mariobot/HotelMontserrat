@@ -25,3 +25,13 @@ a, a:hover, a:focus, a:active{
     height: 100%;
     overflow-x:hidden;
 }
+
+.construccion{
+  margin-top:55px;
+}
+
+@media (min-width: 768px) {
+.construccion{
+  margin-top:4%;
+}
+}
