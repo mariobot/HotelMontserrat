@@ -25,19 +25,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+              <a class="navbar-brand visible-xs-block" href="#">
+                <img class="logomobile" src="img/logohotel2.svg">
+              </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li>
-                <a class="brandh" href="/">
-                    <img class="img-responsive" src="img/logohotel2.svg">
-                </a>
+                <li class="hidden-xs">
+                  <a class="brandh" href="/">
+                      <img class="img-responsive" src="img/logohotel2.svg">
+                  </a>
                 </li>
-                <li><a href="#">Hotel</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotel<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/hotel/caracteristicas">Características</a></li>
+                    <li><a href="/hotel/mision-vision">Mision/Vision</a></li>
+                    <li><a href="/hotel/mision-vision">Ubicación</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Servicios</a></li>
-                <li><a href="#">Habitaciones</a></li>                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Habitaciones<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Acomodación Twin</a></li>
+                    <li><a href="#">Acomodación Doble</a></li>
+                  </ul>
+                </li>                
                 <li><a href="#">Eventos</a></li>
                 <li><a href="#">Galerías</a></li>
                 <li><a href="#">Contáctenos</a></li>                            
@@ -45,42 +61,46 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-        <div class="container-fluid content-wrapper col-xs-12 no-padding">
-          <div class="container">            
-            <div class="col-sm-8 col-sm-push-4 no-padding">
-              <img class="img-responsive" src="http://placehold.it/750x450">
-            </div>
-            <div class="col-sm-4  col-sm-pull-8 no-padding tabsmisionvision">
+        <div class="layer"></div>        
+        <div class="container content-wrapper">            
+          <div class="col-sm-7 col-sm-push-5 no-padding">
+            <img class="img-responsive" src="img/Exterior-17.jpg">
+          </div>
+          <div class="col-sm-5  col-sm-pull-7 no-padding tabsmisionvision">
 
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist">
-                <li role="presentation" class="active col-xs-6 no-padding"><a href="#mision" aria-controls="mision" role="tab" data-toggle="tab">Misión</a></li>
-                <li role="presentation" class="col-xs-6 no-padding"><a href="#vision" aria-controls="vision" role="tab" data-toggle="tab">Visión</a></li>
-              </ul>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist">
+              <li role="presentation" class="active col-xs-6 no-padding"><a href="#mision" aria-controls="mision" role="tab" data-toggle="tab">Misión</a></li>
+              <li role="presentation" class="col-xs-6 no-padding"><a href="#vision" aria-controls="vision" role="tab" data-toggle="tab">Visión</a></li>
+            </ul>
 
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="mision">
-                  <div class="col-xs-9">
-                    <h2>MISIÓN</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis dolorum eius dicta et ex perspiciatis sequi tempore molestias. Impedit corporis sapiente, atque suscipit amet! Quas, eveniet. Deleniti, vel, laboriosam?</p>
-                  </div>
-                  <div class="col-xs-3 no-padding"></div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="mision">
+                <div class="col-xs-9">
+                  <h2>MISIÓN</h2>
+                  <p>Hotel Montserrat Plaza es un centro de hospitalidad y de negocios dedicado a la atención personalizada de sus huéspedes y visitantes, al punto de generar una sensación de exclusividad y confort con los servicios y el trato brindados en cada una de las áreas de sus instalaciones.</p>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="vision">
-                  <div class="col-xs-9">
-                    <h2>VISIÓN</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione explicabo vero quod aut sed aliquid similique natus velit tempora officia impedit, voluptatem nobis dolorem voluptatibus veritatis minus tempore quisquam cum.</p>
-                  </div>
-                  <div class="col-xs-3 no-padding"></div>
-                </div>
+                <div class="col-xs-3 no-padding"></div>
               </div>
-
+              <div role="tabpanel" class="tab-pane" id="vision">
+                <div class="col-xs-9">
+                  <h2>VISIÓN</h2>
+                  <p>Hotel Montserrat Plaza para el 2020 será reconocido como uno de los mejores hoteles del departamento del Casanare por su excelente servicio, calidad e instalaciones.  Estas últimas, además, teniendo el componente diferenciador que las hará destacar en elegancia, confort y belleza.<br><br>Asimismo generará los mejores convenios empresariales y turísticos con los cuales incrementarán el número de visitantes de la región, lo cual repercutirá positivamente en la economía regional. Logrando, de manera paralela, brindar más opciones de trabajo y mejorar las condiciones del mismo.</p>
+                </div>
+                <div class="col-xs-3 no-padding"></div>
+              </div>
             </div>
+
           </div>
         </div>
-        <footer>
-            
+        <footer class="footer-nfixed col-xs-12 no-padding footermargin">
+          <div class="col-xs-6 col-sm-3 col-sm-offset-3 footer-left hidden-xs">
+            <img class="center-block img-height-responsive" src="img/logohotel2.svg">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-sm-offset-6 col-md-3 col-md-offset-6 footer-right no-padding">
+            <p class="text-center"><strong>Calle 24 # 13 - 17</strong><br>Salida Monterrey - Villanueva<br>Monterrey - Casanare - Colombia<br><strong>reservas@hotelmontserratplaza.com</strong><br>Tel: 823 76 32</p>
+          </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>

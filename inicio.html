@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="css/ionicons.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body class="inicio">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]--> 
+        <![endif]-->         
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,21 +34,35 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">Hotel</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li class="left-nav"><a href="#">Habitaciones</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotel<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/hotel/caracteristicas">Características</a></li>
+                    <li><a href="/hotel/mision-vision">Mision/Vision</a></li>
+                    <li><a href="/hotel/mision-vision">Ubicación</a></li>
+                  </ul>
+                </li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li class="dropdown left-nav">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Habitaciones<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Acomodación Twin</a></li>
+                    <li><a href="#">Acomodación Doble</a></li>
+                  </ul>
+                </li>
                 <li class="brand hidden-xs">
                     <a href="#">
                         <img class="img-responsive" src="img/logohotel.svg">
                     </a>
                 </li>
                 <li class="right-nav"><a href="#">Eventos</a></li>
-                <li><a href="#">Galerías</a></li>
-                <li><a href="#">Contáctenos</a></li>                            
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Reservas</a></li>                            
               </ul>              
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+        <div class="layer"></div>
         <div class="container-fluid">
           <div class="col-xs-12 no-padding">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -56,22 +70,33 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <h2 class="text-center inicio-title">CONOCE MÁS DEL <br><span>HOTEL</span></h1>
+                  <h2 class="text-center inicio-title">CONOCE MÁS DEL <br><span>HOTEL</span></h2>
+                  <div class="col-sm-2 col-sm-offset-5">
+                    <a href="#" class="btn btn-block btn-hotel">Ver más</a>
+                  </div>
+                  <p class="hidden">Ven y comparte junto a tu pareja nuestro plan romantico</p>
                 </div>
                 <div class="item">
-                  <h2 class="text-center inicio-title">PRESTAMOS EL MEJOR<br><span>SERVICIO</span></h1>
+                  <h2 class="text-center inicio-title">PRESTAMOS EL MEJOR<br><span>SERVICIO</span></h2>
+                  <div class="col-sm-2 col-sm-offset-5">
+                    <a href="#" class="btn btn-block btnhotel">Ver más</a>
+                  </div>
                 </div>
                 <div class="item">
-                  <h2 class="text-center inicio-title">CONOCE NUESTRAS<br><span>INSTALACIONES</span></h1>
+                  <h2 class="text-center inicio-title">CONOCE NUESTRAS<br><span>INSTALACIONES</span></h2>
+                  <div class="col-sm-2 col-sm-offset-5">
+                    <a href="#" class="btn btn-block btn-hotel">Ver más</a>
+                  </div>
+                  <p class="hidden">Contamos con sala de conferencias para eventos empresariales y sociales.</p>
                 </div>
               </div>
 
               <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <a id="left" class="left carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="icon ion-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <a id="right" class="right carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="next">
                 <span class="icon ion-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -79,17 +104,40 @@
           </div>     
         </div>
         <footer class="footer">
-          <div class="container">
-            <div class="col-xs-6 col-sm-3 col-sm-offset-3 footer-left hidden-xs">
-              <img class="img-responsive" src="img/logohotel2.svg">
+          <div class="col-xs-12 no-padding">
+            <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 footer-left hidden-xs">
+              <img class="center-block img-height-responsive" src="img/logohotel2.svg">
             </div>
-            <div class="col-xs-12 col-sm-3 col-sm-offset-6 footer-right no-padding">
-              <p><strong>Carrera 54 #100 -29</strong><br>Casanare - Colombia<br><strong>reservas@hotelmontserratplaza.com</strong><br>Tel: 823 76 32</p>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-6 col-md-3 col-md-offset-6 footer-right no-padding">
+              <p class="text-center"><strong>Calle 24 # 13 - 17</strong><br>Salida Monterrey - Villanueva<br>Monterrey - Casanare - Colombia<br><strong>reservas@hotelmontserratplaza.com</strong><br>Tel: (+57 8) 823 76 32</p>
             </div>
           </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {   
+            $(".inicio").backstretch([
+              "img/hotel/Exterior-18.jpg",
+              "img/hotel/Piscina-2.jpg",
+              "img/hotel/Exterior-2.jpg"
+            ], {duration: 4000, fade: 750});
+            
+            $('.carousel').carousel({
+             interval: 4750
+            });
+          });
+
+          $( "#left" ).click(function() {
+            $(".inicio").backstretch("prev");
+          });
+
+          $( "#right" ).click(function() {
+            $(".inicio").backstretch("next");
+          });
+
+        </script>
     </body>
 </html>

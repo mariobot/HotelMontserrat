@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^hotel/caracteristicas$ caracteristicas.html [NC,L]
+RewriteRule ^hotel/mision-vision$ misionvision.html [NC,L]
+RewriteRule ^hotel/ubicacion$ ubicacion.html [NC,L]
+RewriteRule ^servicios$ servicios.html [NC,L]
+RewriteRule ^habitaciones/doble$ adoble.html [NC,L]
+RewriteRule ^habitaciones/twin$ atwin.html [NC,L]
+RewriteRule ^eventos$ eventos.html [NC,L]
+RewriteRule ^galerias$ galerias.html [NC,L]
+RewriteRule ^contactenos$ contactenos.html [NC,L]

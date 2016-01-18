@@ -30,16 +30,18 @@
 html,body{
 	font-family: 'Montserrat', sans-serif;
 	min-height: 100%;
+	overflow-x: hidden; 
 }
 
 body { 
-  background: url(../img/fondo.jpg) no-repeat center center fixed; 
+  background: url(../img/hotel/Exterior-18.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	min-height: 100%;
 }
+
 
 body > .container-fluid {
     padding: 100px 0px 0px;
@@ -51,7 +53,7 @@ a, a:hover, a:focus, a:active{
 }
 
 p{
-	font-family: 'montserratultra_light';
+	font-family: 'montserratlight';
 }
 
 .no-padding{
@@ -62,6 +64,11 @@ p{
 	width:100%;
 }
 
+.img-height-responsive{
+	width: auto;
+	height:100%;
+}
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -70,6 +77,20 @@ p{
 
 .content-wrapper { 
 	margin-top: 55px; 
+	min-height: 100%;
+}
+
+.layer{
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.whitebg{
+	background-color: #FFF;
 }
 
 .logomobile{
@@ -116,24 +137,62 @@ p{
   text-align: center;
 }
 
-.brand{
-	width:180px;
-	background-color: #FFF;
-	border-bottom: 2px solid #4FBC83;
-	padding-left: 15px;
-	padding-right: 15px;
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 17px 15px;
+    margin-top: 0px;
+    margin-right: 14px;
+    background-color: rgb(43, 118, 114);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    margin-bottom: 0px;
 }
 
-.brandh, .brandh:hover, .brandh:focus, .brandh:active{
-	width:100px;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:active .icon-bar,
+.navbar-toggle:focus .icon-bar {
+    background-color: #2B7672;
+}
+
+.brand{
+	width:155px;
 	background-color: #FFF;
 	border-bottom: 2px solid #4FBC83;
-	padding:0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
+	width:100px;
+	background-color: #FFF !important;
+	border-bottom: 2px solid #4FBC83;
+	padding:26px 12px !important;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #2B7672;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.dropdown-menu {
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+}
+
+.dropdown-menu > li > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active, .dropdown-menu > li > a:focus {
+	color: #2B7672;
+	background-color: rgba(255,255,255,1);
 }
 
 .tabsmisionvision{
 	background-color: #FFF;
-	height:430px;
+	height:676px;
 	margin: 10px auto;
 }
 
@@ -159,7 +218,7 @@ p{
 
 .tab-pane .col-xs-3{
 	background-color: #2A7571;
-	height:388px;
+	height:634px;
 	-webkit-box-shadow: inset 190px 0px 40px -200px rgba(0,2,34,1);
 	-moz-box-shadow: inset 190px 0px 40px -200px rgba(0,2,34,1);
 	box-shadow: inset 190px 0px 40px -200px rgba(0,2,34,1);
@@ -177,6 +236,7 @@ p{
 	background-image: none;
 }
 
+
 .footer {
     position: absolute;
     bottom: 2px;
@@ -186,34 +246,86 @@ p{
     border-top: 6px solid rgba(62,98,107,0.5);
 }
 
-.footer .container{
+.footer .col-xs-12{
 	position: relative;
 }
 
 .footer .footer-left{
 	position: absolute;
 	background-color:#FFF;
-	bottom: -50px;
-	height: 130px;
-	padding: 10px 25px;
+	bottom: -47px;
+	height: 110px;
+	padding: 18px 55px;
 }
 
 .footer .footer-right{
 	position: absolute;
 	background-color:#2B7672;
 	color:#FFF;
-	bottom: -50px;
-	height: 130px;
-	padding: 10px 25px;
+	bottom: -47px;
+	height: 110px;
+	padding: 10px 0px;
+	font-size: 0.9em;
 }
+
+.footer-nfixed{
+	position: relative;
+	margin-top: 0px;
+	height: 54px;
+    background-color: rgba(125,187,133,0.5);
+    border-top: 6px solid rgba(62,98,107,0.5);
+}
+
+.footermargin{
+	margin-top: 150px;
+}
+
+.footer-nfixed .footer-left{
+	position: absolute;
+	background-color:#FFF;
+	bottom: 0px;
+	height: 110px;
+	padding: 18px 55px;
+}
+
+.footer-nfixed .footer-right{
+	position: absolute;
+	background-color:#2B7672;
+	color:#FFF;
+	bottom: 0px;
+	height: 110px;
+	padding: 10px 0px;
+	font-size: 0.9em;
+}
+
+.btn-hotel{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	color: #2B7672;
+	background-color: #FFF;
+	border-color: #FFF;
+	padding: 10px 12px;
+}
+
+.btnhotel{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background-color: #2B7672;
+	color: #FFF;
+	border-color: #2B7672;
+	padding: 10px 12px;
+}
+
 /*INICIO*/
 
 .inicio-title{
 	font-family: 'montserratultra_light';
 	font-size: 1.8em;
 	color:#FFF;
-	margin-top: 6%;
-	margin-bottom: 100px;
+	margin-top: 10%;
+	margin-bottom: 40px;
 }
 
 .inicio-title span{
@@ -265,14 +377,7 @@ p{
 	color: #2A7571;
 }
 
-.serviciosimgtopoverlap{
-	position: relative;
-	top:-50px;
-	left: -10px;
-	-webkit-box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
-	box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
-}
+
 
 .serviciosimgbottomoverlap{
 	position: relative;
@@ -285,6 +390,7 @@ p{
 
 .servicioscontainer{
 	padding: 30px 40px;
+	height: 100%;
 }
 
 .otrosservicios{
@@ -363,6 +469,242 @@ p{
 	margin-bottom: 30px;
 }
 
+/*GALERIA*/
+.galeria{
+	position: relative;
+	background: url(../img/fondo.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color:#FFF;
+	padding-top:130px;
+	padding-bottom:110px;
+}
+
+.galeriaheader{
+	position:relative;
+	font-family: 'montserratlight';
+	background-color: #FFF;
+	color:#2B7672;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width:90%;
+	margin-left: 5%;
+	margin-bottom: 0;
+	top:5px;
+}
+
+.flexslider{
+	z-index: 2;
+}
+
+.galeriafooter{
+	position:relative;
+	width:90%;
+	margin-left: 5%;
+	height:60px;
+	background-color: #55B983;
+	z-index: 1;
+	top:-55px;
+}
+
+.galeriacover{
+	position: absolute;
+	height:50%;
+	bottom: 0;
+	z-index:0;
+	width: 100%;
+	left: 0;
+	background-color: #FDFDFD;
+}
+
+.galeriahero{
+	background-color: #FDFDFD;
+}
+
+.galeriavideo{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* caracteristicas */
+.caracteristicas{
+	position: relative;
+	background: url(../img/hotel/Exterior-13.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color:#FFF;
+	padding-top:80px;
+	padding-bottom:110px;
+}
+
+.caracteristicas h1{
+	font-family: 'montserratlight';
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: #FFF;
+	font-size:27px;
+	text-align: center;
+}
+
+.caracteristicas p{
+	font-family: 'montserratlight';
+	margin-top: 20px;
+}
+
+.leftcarspace{
+	background-color: #BACECD;
+	height:713px;
+}
+
+.leftcarsspace{
+	background-color: #BACECD;
+	height:250px;
+}
+
+.caracteristicaslayout{
+	background-color: #BACECD;
+}
+
+.caracteristicaslayout h2{
+	font-family: 'montserratlight';
+	text-transform: uppercase;
+	color: #2A7571;
+}
+
+.img-caracteristicas{
+	height: 380px;
+	overflow-x:hidden; 
+}
+
+.img-caracteristicas img{
+	height:100%;
+	width:auto;
+	position:relative;
+}
+
+.img-caracteristicas-deux{
+	position: relative;
+	overflow:hidden;
+}
+
+.img-caracteristicas-deux img{ 
+	width:100%;
+	height:auto;
+}
+
+.caracteristicasinstalaciones{
+	position: relative;
+	background: url(../img/hotel/Exterior-18.jpg) no-repeat center center; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+.caracteristicasinstalaciones .layer{
+	position: absolute;
+	background-color: rgba(38,65,94,0.7);
+	z-index: 0;
+}
+
+.caracteristicasinstalaciones h2, .caracteristicasinstalaciones p {
+	position: relative;
+	z-index: 1;
+	color:#FFF;
+	padding: 10px 15px;
+}
+/* contacto */
+.contacto{
+	background-color: #1F616D;
+	color: #FFF;
+	margin-bottom: 100px;
+}
+
+.contacto h1{
+	font-family: "montserratlight";
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.contacto p{
+	font-size: 1.2em;	
+}
+
+.contactform{
+	background-color: #55BC84;
+	padding:50px 0;
+}
+
+.contactform label{
+	font-family: "montserratlight";
+	color: #FFF;
+	margin-left: 10px;
+}
+
+.contactform .form-control{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.contactform button{
+	margin-right: 15px;
+	margin-top: 10px;
+	background-color: #2B7672;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	color:#FFF;
+	border-color: #2B7672;
+	font-size: 1.2em;
+}
+
+/* Carrousel */
+.carousel-indicators li {
+	background-color: rgb(85, 188, 132);
+	border: 1px solid rgb(85, 188, 132);
+}
+
+.carousel-indicators .active {
+    background-color: rgb(0, 117, 101);
+    border-color: rgb(0, 117, 101);
+}
+
+/* Ubicacion */
+#map{
+  height: 400px;
+}
+
+.ubicacion h1{
+	color:#FFF;
+}
+
+.ubicacioncontent{
+	background-color: #FFF;
+	padding:30px;
+	height: 400px;
+}
+
+.ubicacionleft{
+	background-color: #55BC84;
+	color:#FFF;
+	height:100px;
+	padding: 20px 0px;
+}
+
+.ubicacionright{
+	background-color:#2B7672;
+	color:#FFF;
+	height:100px;
+	padding:32px 0;
+	font-size: 0.9em;
+}
+
 @media (min-width: 768px){
 	
 	body > .container-fluid {
@@ -380,6 +722,14 @@ p{
 	.navbar-default .navbar-nav > li > a:hover{
 		color:#FFF;
 	}
+	
+	.brand{
+		width:125px
+	}
+
+	.navbar-nav > li > a{
+		font-size: 0.8em;
+	}
 
 	.left-nav{
 		margin-right: 25px;
@@ -395,6 +745,7 @@ p{
 	
 	.inicio-title {
 	    font-size: 2.5em;
+	    margin-top: 22%;
 	}
 	
 	.inicio-title span{
@@ -404,11 +755,115 @@ p{
 	.tabsmisionvision {
 		margin: 0px auto;
 	}
+	
+	.footer .footer-left{
+		padding: 25px 30px;
+	}
+
+	.footer-left img{
+		width:100%;
+		height:auto;
+	}
+	
+	.footer-nfixed .footer-left {
+	    padding: 25px 30px;
+	}
+
+	.footermargin {
+	    margin-top: 210px;
+	}
+
+	.tabsmisionvision {
+	    height: 640px;
+	}
+
+	.tab-pane .col-xs-3 {
+    	height: 598px;
+	}
+	
+	.caracteristicas{
+		padding-top: 180px;
+	}
+
+	.caracteristicas h1{
+		font-size:36px;
+		text-align: left;
+	}
+	
+	.caracteristicasinstalaciones{
+		padding: 30px 10%;
+	}
+	
+	.caracteristicasinstalaciones h2, .caracteristicasinstalaciones p {
+		padding: 0px;
+	}
+
+	.img-caracteristicas{
+		height: 500px;
+	}
+	
+	.img-caracteristicas img{
+		left:-285px;
+	}
+	
+	.img-caracteristicas-deux img{
+		width:auto;
+		height:473px;
+	}
+
+	.caracteristicasheight{
+		height:473px;
+	}
+
+	.serviciosimgtopoverlap{
+		position: relative;
+		top:-50px;
+		left: -10px;
+		-webkit-box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
+		box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
+	}
+	
+	
 }
 
 @media (min-width: 992px){
+
+	.brand{
+		width:155px;
+	}
+
+	.navbar-nav > li > a{
+		font-size: 1em;
+	}
+	
+	.inicio-title {
+		margin-top:3%;
+	}
+	
 	.inicio-title span{
 		font-size: 2.5em;
+	}
+
+	.footer .footer-left{
+		padding: 20px 30px;
+	}
+
+	.img-caracteristicas img{
+		left:-285px;
+	}
+}
+
+@media (min-width: 1024px){
+	.footer-left img{
+		height:100%;
+		width:auto;
+	}
+}
+
+@media (min-width: 1200px){
+	.img-caracteristicas img{
+		left:0;
 	}
 }
 
@@ -421,5 +876,9 @@ p{
 
 	.inicio-title span{
 		font-size: 2.8em;
+	}
+
+	.footermargin{
+		margin-top: 212px;
 	}
 }

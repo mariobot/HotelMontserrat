@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Galeria | Hotel Montserrat Plaza</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--> 
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs-block" href="#">
+                <img class="logomobile" src="img/logohotel2.svg">
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="hidden-xs">
+                  <a class="brandh" href="/">
+                      <img class="img-responsive" src="img/logohotel2.svg">
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotel<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/hotel/mision-vision">Mision/Vision</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Servicios</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Habitaciones<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Acomodación Twin</a></li>
+                    <li><a href="#">Acomodación Doble</a></li>
+                  </ul>
+                </li>                
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contáctenos</a></li>                            
+              </ul>              
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <section class="col-xs-12 no-padding galeria">
+          <div class="col-md-10 col-md-offset-1">
+            <h1 class="text-center galeriaheader">GALERÍA</h1>
+            <!-- GALLERY -->
+            <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <!-- items mirrored twice, total of 12 -->
+                </ul>
+            </div>
+            <div id="carousel" class="flexslider hidden-xs">
+                <ul class="slides">
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/Habitacion-18.jpg" />
+                  </li>
+                  <!-- items mirrored twice, total of 12 -->
+                </ul>
+            </div>
+            <!-- END GALLERY -->
+            <div class="galeriafooter"></div>
+          </div>
+          <div class="galeriacover"></div>
+        </section>
+        <section class="col-xs-12 no-padding galeriahero">
+            <div class="container">
+                <p class="wow fadeIn" data-wow-delay="0.5s">En el servicio ofrecemos un especial del día y la posibilidad de elegir también entre nuestros platos a la carta. La comida se prepara con la sazón típica de la zona. De nuestros alimentos siempre frescos y cuidadosamente seleccionados cabe destacar la carne, una fiel muestra de la calidad de la ganadería del llano que cuentan con un indiscutible y excelente prestigio. <br><br>* La oferta de carne a la llanera está disponible al ser solicitada con anterioridad para eventos especiales.</p>  
+                <div class='col-xs-12 no-padding galeriavideo' id='video-container'>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/yzTuBuRdAyA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>          
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script> 
+        <script src="js/fitvids.js"></script>       
+        <script>
+            new WOW().init();
+
+            $(window).load(function() {
+              // The slider being synced must be initialized first
+              $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 210,
+                itemMargin: 5,
+                asNavFor: '#slider'
+              });
+             
+              $('#slider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel"
+              });
+            });
+
+            $("#video-container").fitVids();
+        </script>
+    </body>
+</html>
