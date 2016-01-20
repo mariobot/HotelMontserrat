@@ -280,6 +280,10 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	margin-top: 150px;
 }
 
+.footermarginsmall{
+	margin-top: 50px;
+}
+
 .footer-nfixed .footer-left{
 	position: absolute;
 	background-color:#FFF;
@@ -778,6 +782,10 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.footermargin {
 	    margin-top: 210px;
 	}
+	
+	.footermarginsmall{
+		margin-top: 0px;
+	}
 
 	.tabsmisionvision {
 	    height: 640px;
@@ -818,7 +826,11 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	}
 
 	.caracteristicasheight{
-		height:473px;
+		height:505px;
+	}
+	
+	.habitacionestexto{
+		padding-bottom:20px;
 	}
 
 	.serviciosimgtopoverlap{
