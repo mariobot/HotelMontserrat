@@ -632,14 +632,15 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 .contacto{
 	background-color: #1F616D;
 	color: #FFF;
-	margin-bottom: 100px;
+	padding:20px;
 }
 
 .contacto h1{
 	font-family: "montserratlight";
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-transform: uppercase;
+	font-size: 26px;
 }
 
 .contacto p{
@@ -884,6 +885,10 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.galeria{
 		padding-top:130px;
 	}
+	.contacto{
+		padding: 0;
+		margin-bottom: 100px;
+	}
 }
 
 @media (min-width: 1024px){
@@ -899,6 +904,11 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 @media (min-width: 1200px){
 	.img-caracteristicas img{
 		left:0;
+	}
+	.contacto h1{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 36px;
 	}
 }
 
