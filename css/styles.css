@@ -463,6 +463,11 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	padding:50px 0;
 }
 
+.acomodacionright .features .col-xs-12  span img{
+	width:20px;
+	margin-right: 2px;
+}
+
 .acomodacionleft .descripcion{
 	background-color: #FFF;
 	padding:50px 15px; 
@@ -478,8 +483,8 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
-	padding-top:130px;
-	padding-bottom:110px;
+	padding-top:50px;
+	padding-bottom:50px;
 }
 
 .galeriaheader{
@@ -487,12 +492,13 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	font-family: 'montserratlight';
 	background-color: #FFF;
 	color:#2B7672;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	width:90%;
 	margin-left: 5%;
 	margin-bottom: 0;
 	top:5px;
+	font-size: 30px;
 }
 
 .flexslider{
@@ -824,7 +830,9 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 		box-shadow: -1px 10px 13px 0px rgba(0,0,0,0.75);
 	}
 	
-	
+	.galeria{
+		padding-top:80px;
+	}
 }
 
 @media (min-width: 992px){
@@ -852,12 +860,18 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.img-caracteristicas img{
 		left:-285px;
 	}
+	.galeria{
+		padding-top:130px;
+	}
 }
 
 @media (min-width: 1024px){
 	.footer-left img{
 		height:100%;
 		width:auto;
+	}
+	#map{
+	  height: 500px;
 	}
 }
 

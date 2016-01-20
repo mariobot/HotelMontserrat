@@ -1,4 +1,8 @@
 RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
 RewriteRule ^hotel/caracteristicas$ caracteristicas.html [NC,L]
 RewriteRule ^hotel/mision-vision$ misionvision.html [NC,L]
 RewriteRule ^hotel/ubicacion$ ubicacion.html [NC,L]
