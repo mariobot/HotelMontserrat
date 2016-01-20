@@ -465,11 +465,12 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	background-color: #007565;
 	color:#FFF;
 	padding:50px 0;
+	font-size: 0.95em;
 }
 
 .acomodacionright .features .col-xs-12  span img{
 	width:20px;
-	margin-right: 2px;
+	margin-right: 5px;
 }
 
 .acomodacionleft .descripcion{
