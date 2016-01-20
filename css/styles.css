@@ -451,9 +451,17 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	font-family: 'montserratlight';
 	background-color: #55BC84;
 	color:#FFF;
-	height:300px;
 	text-transform: uppercase;
-	padding-top: 72px;
+}
+
+.acomodacionleft .titulo {
+	padding-top: 30px;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.acomodacionleft .titulo h1{
+	font-size:30px;
 }
 
 .acomodacionright hr, .acomodacionleft hr{
@@ -882,6 +890,13 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.img-caracteristicas img{
 		left:-285px;
 	}
+
+	.acomodacionright .titulo, .acomodacionleft .titulo{
+		height:300px;
+		padding-top: 72px;
+		padding-bottom: 0;
+	}
+
 	.galeria{
 		padding-top:130px;
 	}
