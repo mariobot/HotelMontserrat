@@ -675,6 +675,13 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	font-size: 1.2em;
 }
 
+#form-messages.success{
+	color:#FFF;
+	margin-left: 10px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
 /* Carrousel */
 .carousel-indicators li {
 	background-color: rgb(85, 188, 132);
@@ -715,6 +722,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	padding:32px 0;
 	font-size: 0.87em;
 }
+
 
 @media (min-width: 768px){
 	
