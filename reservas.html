@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Contacto | Hotel Montserrat Plaza</title>
+        <title>Reservas | Hotel Montserrat Plaza</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -64,21 +64,26 @@
         <div class="layer"></div> 
         <div class="container content-wrapper">            
           <div class="col-sm-7 col-sm-push-5 no-padding contactform">
-            <form>
+            <form id="ajax-contact" method="post" action="/mailer.php">
+              <div id="form-messages"></div>
               <div class="form-group">
                 <label for="inputName">Nombre</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                <input id="name" type="text" class="form-control" id="inputName" placeholder="Nombre" name="name" required>
               </div>
               <div class="form-group">
                 <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input id="email" type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required>
               </div>
               <div class="form-group">
                 <label for="inputTelephone">Teléfono</label>
-                <input type="text" class="form-control" id="inputTelephone" placeholder="Teléfono">
+                <input id="phone" type="text" class="form-control" id="inputTelephone" placeholder="Teléfono" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="inputMessage">Mensaje</label>
+                <textarea id="message" class="form-control" id="inputMessage" placeholder="Mensaje" name="message" row="7"></textarea> 
               </div>
               <div class="pull-right">
-                <button type="submit" class="btn btn-default">Enviar</button>
+                <button id="btnenvio" type="submit" class="btn btn-default">Enviar</button>
               </div>
             </form>
           </div>
@@ -102,6 +107,62 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>        
+        <script type="text/javascript">
+
+            $(function() {
+                // Get the form.
+                var form = $('#ajax-contact');
+
+                // Get the messages div.
+                var formMessages = $('#form-messages');
+
+                // Set up an event listener for the contact form.
+                $(form).submit(function(event) {
+                    // Stop the browser from submitting the form.
+                    event.preventDefault();
+
+                    $('#btnenvio').prop('disabled', true);
+
+                    var formData = $(form).serialize();
+                    $.ajax({
+                        type: 'POST',
+                        url: $(form).attr('action'),
+                        data: formData
+                    })
+                    .done(function(response) {
+                        // Make sure that the formMessages div has the 'success' class.
+                        $(formMessages).removeClass('error');
+                        $(formMessages).addClass('success');
+
+                        // Set the message text.
+                        $(formMessages).text(response);
+
+                        // Clear the form.
+                        $('#name').val('');
+                        $('#phone').val('');
+                        $('#email').val('');
+                        $('#message').val('');
+                        $('#btnenvio').prop('disabled', false);
+                    })
+                    .fail(function(data) {
+                        console.log('error');
+                        console.log(data);
+                        // Make sure that the formMessages div has the 'error' class.
+                        $(formMessages).removeClass('success');
+                        $(formMessages).addClass('error');
+
+                        // Set the message text.
+                        if (data.responseText !== '') {
+                            $(formMessages).text(data.responseText);
+                        } else {
+                            $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                        }
+                    });
+                });
+            });
+            
+        </script>
+
     </body>
 </html>
