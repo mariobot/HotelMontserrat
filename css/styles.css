@@ -265,7 +265,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	bottom: -47px;
 	height: 110px;
 	padding: 10px 0px;
-	font-size: 0.9em;
+	font-size: 0.87em;
 }
 
 .footer-nfixed{
@@ -863,6 +863,10 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.galeria{
 		padding-top:80px;
 	}
+
+	.contactform{
+		margin-bottom:176px;
+	}
 }
 
 @media (min-width: 992px){
@@ -904,6 +908,10 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 		padding: 0;
 		margin-bottom: 100px;
 	}
+
+	.contactform{
+		margin-bottom:176px;
+	}
 }
 
 @media (min-width: 1024px){
@@ -913,6 +921,9 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	}
 	#map{
 	  height: 570px;
+	}
+	.contactform{
+		margin-bottom:0px;
 	}
 }
 
