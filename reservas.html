@@ -67,7 +67,7 @@
             <div class="col-xs-3 no-padding hidden-xs hidden-sm">
               <img class="img-responsive" src="img/hotel/contacto.jpg">
             </div>  
-            <div class="col-sm-9">
+            <div id="startchange" class="col-sm-9">
               <h1>Contáctenos</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint, delectus nihil, iste odit iusto pariatur qui quod iure sed deleniti doloribus cupiditate nesciunt eius quam quidem autem distinctio neque?</p>
             </div>           
@@ -109,6 +109,29 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>        
         <script type="text/javascript">
+
+            $(document).ready(function(){   
+               if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                // some code..
+               } else {    
+                    var scroll_start = 0;
+                    var startchange = $('#startchange');
+                    var offset = startchange.offset();
+                    if (startchange.length){
+                        $(document).scroll(function() { 
+                            scroll_start = $(this).scrollTop();
+                            if(scroll_start > offset.top) {
+                              $(".navbar-default").css('background-color', '#fff');
+                              $(".navbar-default a").css('color', '#2A7571');
+                            } else {
+                              $('.navbar-default').css('background-color', 'transparent');
+                              $(".navbar-default a").css('color', '#fff');
+                              $(".dropdown-menu li a").css('color','#2B7672');
+                            }
+                        });
+                    }
+                }
+            });
 
             $(function() {
                 // Get the form.
