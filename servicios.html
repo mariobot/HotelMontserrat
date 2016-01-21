@@ -62,7 +62,7 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-        <section class="col-xs-12 no-padding servicios">
+       <section class="col-xs-12 no-padding servicios">
           <div class="container">
               <div class="col-sm-6">           
                 <h1 class="wow fadeIn">Servicios</h1>
@@ -70,7 +70,7 @@
               </div>
           </div>
         </section>
-        <section class="col-xs-12 no-padding servicioslayout">
+        <section id="startchange" class="col-xs-12 no-padding servicioslayout">
             <div class="col-sm-6 servicioscontainer">           
                 <h2 class="wow fadeIn" data-wow-delay="0.5s">Restaurante</h2>
                 <p class="wow fadeIn" data-wow-delay="0.5s">En el servicio ofrecemos un especial del día y la posibilidad de elegir también entre nuestros platos a la carta. La comida se prepara con la sazón típica de la zona. De nuestros alimentos siempre frescos y cuidadosamente seleccionados cabe destacar la carne, una fiel muestra de la calidad de la ganadería del llano que cuentan con un indiscutible y excelente prestigio. <br><br>* La oferta de carne a la llanera está disponible al ser solicitada con anterioridad para eventos especiales.</p>  
@@ -136,6 +136,27 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script>
+            $(document).ready(function(){   
+               if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                // some code..
+               } else {    
+                    var scroll_start = 0;
+                    var startchange = $('#startchange');
+                    var offset = startchange.offset();
+                    if (startchange.length){
+                        $(document).scroll(function() { 
+                            scroll_start = $(this).scrollTop();
+                            if(scroll_start > offset.top) {
+                              $(".navbar-default").css('background-color', '#fff');
+                              $(".navbar-default a").css('color', '#2A7571');
+                            } else {
+                              $('.navbar-default').css('background-color', 'transparent');
+                              $(".navbar-default a").css('color', '#fff');
+                            }
+                        });
+                    }
+                }
+            });
             var wow = new WOW(
               {
                 boxClass:     'wow',      // animated element css class (default is wow)
