@@ -66,7 +66,7 @@
           <div class="col-sm-7 col-sm-push-5 no-padding">
             <img class="img-responsive" src="/img/Exterior-17.jpg">
           </div>
-          <div class="col-sm-5  col-sm-pull-7 no-padding tabsmisionvision">
+          <div id="startchange" class="col-sm-5  col-sm-pull-7 no-padding tabsmisionvision">
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist">
@@ -105,5 +105,29 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){   
+             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+              // some code..
+             } else {    
+                  var scroll_start = 0;
+                  var startchange = $('#startchange');
+                  var offset = startchange.offset();
+                  if (startchange.length){
+                      $(document).scroll(function() { 
+                          scroll_start = $(this).scrollTop();
+                          if(scroll_start > offset.top) {
+                            $(".navbar-default").css('background-color', '#fff');
+                            $(".navbar-default a").css('color', '#2A7571');
+                          } else {
+                            $('.navbar-default').css('background-color', 'transparent');
+                            $(".navbar-default a").css('color', '#fff');
+                            $(".dropdown-menu li a").css('color','#2B7672');
+                          }
+                      });
+                  }
+              }
+          });
+        </script>
     </body>
 </html>
