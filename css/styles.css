@@ -411,7 +411,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 }
 
 .lavanderia{
-	 background: url(http://placehold.it/350x650) no-repeat center center; 
+	 background: url(../img/hotel/lavanderia.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -420,7 +420,8 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 }
 
 .roomservice{
-	 background: url(http://placehold.it/350x650) no-repeat center center; 
+	position: relative;
+	 background: url(../img/hotel/eventos-sociales.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -428,16 +429,26 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
   padding-top: 110px;
 }
 
+.roomservice h2{
+	margin-top: 0;
+}
+
+.lavanderia h2, .roomservice h2{
+	color:#FFF;
+}
+
 .servicioleft{
 	background-color: #2A7771;
 	color: #FFF;
 	padding: 20px 20px;
+	min-height: 150px;
 }
 
 .servicioright{
 	background-color: #56BC84;
 	color: #FFF;
 	padding: 20px 20px;
+	min-height: 150px;
 }
 
 .whitefooter{
