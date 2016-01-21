@@ -349,7 +349,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 
 /*SERVICIOS*/
 .servicios{
-	background: url(../img/fondo.jpg) no-repeat center center; 
+	background: url(../img/hotel/Exterior-13.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -442,7 +442,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 
 .whitefooter{
 	position: relative;
-	height: 190px;
+	height: 240px;
 	background-color: #FFF;
 }
 
