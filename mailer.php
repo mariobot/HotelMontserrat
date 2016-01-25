@@ -60,7 +60,7 @@
         $mail->SetFrom($email, $name);
         $mail->Subject = 'Contacto';
         $mail->MsgHTML($email_content);
-        $mail->AddAddress('jdavid@cannedhead.com', 'Contacto');
+        $mail->AddAddress('reservas@hotelmontserratplaza.com', 'Contacto');
 
         $result = $mail->Send(); 
         if($result) {
