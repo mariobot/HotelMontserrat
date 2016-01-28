@@ -349,7 +349,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 
 /*SERVICIOS*/
 .servicios{
-	background: url(../img/hotel/Exterior-13.jpg) no-repeat center center; 
+	background: url(https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/Exterior-13.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -561,7 +561,7 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 /* caracteristicas */
 .caracteristicas{
 	position: relative;
-	background: url(../img/hotel/Exterior-13.jpg) no-repeat center center; 
+	background: url(https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/Exterior-13.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -751,6 +751,49 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	font-weight: bold;
 	font-size: 1.2em;
 }
+
+.plan-izq{
+ 
+  background: url(http://placehold.it/350x150/000000/ffffff) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top:50px;
+  padding:20px 10px 30px;
+  color:#FFF;
+  min-height:250px;
+}
+
+.plan-der-top{
+ 
+  background: url(http://placehold.it/350x150/222222/ffffff) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:20px 10px 30px;
+  color:#FFF;
+  min-height:250px;
+}
+
+.plan-der-bottom{
+ 
+  background: url(http://placehold.it/350x150/444444/ffffff) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:20px 10px 30px;
+  color:#FFF;
+  min-height:250px;
+}
+
+.plan-der-top h2, .plan-der-bottom h2{
+	margin-bottom: 25px;
+}
+
+
 @media (min-width: 768px){
 	
 	body > .container-fluid {
@@ -884,6 +927,39 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 
 	.contactform{
 		margin-bottom:128px;
+	}
+	html.height, html.height > body{
+		height:100%;
+	}
+	.plan-izq{
+		min-height: 100%;
+		margin-top: 0;
+		padding-top: 15%;
+	}
+	
+	.plan-izq h2{
+		margin-bottom: 3%;
+	}
+
+	.plan-izq p{
+		padding: 0 20%;
+	}
+	
+	.plan-der{
+		height: 100%;
+	}
+
+	.plan-der-top, .plan-der-bottom{
+		padding-top: 17%;
+		height: 50%;
+	}
+	
+	.plan-der-top h2, .plan-der-bottom h2{
+		margin-bottom: 3%;
+	}
+
+	.plan-der-top p, .plan-der-bottom p{
+		padding: 0 20%;
 	}
 }
 
