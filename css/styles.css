@@ -961,6 +961,10 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.plan-der-top p, .plan-der-bottom p{
 		padding: 0 20%;
 	}
+
+	.ubicacioncontent{
+		padding:50px 60px;
+	}
 }
 
 @media (min-width: 992px){
