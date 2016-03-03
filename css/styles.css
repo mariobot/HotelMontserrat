@@ -525,6 +525,22 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	font-size: 30px;
 }
 
+.turismoheader{
+	position:relative;
+	font-family: 'montserratlight';
+	background-color: #FFF;
+	color:#2B7672;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width:90%;
+	margin-left: 5%;
+	margin-bottom: 0;
+	top:5px;
+	font-size: 30px;
+	margin-top: -55px;
+	z-index: 2;
+}
+
 .flexslider{
 	z-index: 2;
 }
@@ -743,55 +759,49 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	font-size: 0.87em;
 }
 
+.turismocover{
+	top:0;
+	background: url(../img/fondo.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index:2;
+	height:190px;
+}
 .plan{
-	padding:30px 0px;
-	color:#FFF;
-	background-color: #55BC84;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.2em;
+	margin-bottom: 40px;
 }
 
-.plan-izq{
- 
-  background: url(https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/imagen-monterrey-1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-top:50px;
-  padding:20px 10px 30px;
-  color:#FFF;
-  min-height:250px;
+.parone, .partwo{
+	padding:0;
 }
 
-.plan-der-top{
- 
-  background: url(https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/imagen-monterrey-2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding:20px 10px 30px;
-  color:#FFF;
-  min-height:250px;
+.partwo{
+	margin-bottom: 30px;
 }
 
-.plan-der-bottom{
- 
-  background: url(https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/imagen-monterrey-3.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding:20px 10px 30px;
-  color:#FFF;
-  min-height:250px;
+.plan .col-md-4{
+	background-color: #94C1BF;
+	padding: 50px 25px 70px;
 }
 
-.plan-der-top h2, .plan-der-bottom h2{
-	margin-bottom: 25px;
+.plan .col-md-4 h2{
+	color:#2B7672;;
 }
+
+.lastplan{
+	margin-bottom: 80px;
+}
+
+.planes .hero{
+	color: #87868a;
+	font-size: 1.333333333333333em;
+	line-height: 1.5em;
+	margin-bottom: 50px;
+}
+
+
 
 
 @media (min-width: 768px){
@@ -940,40 +950,27 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	html.height, html.height > body{
 		height:100%;
 	}
-	.plan-izq{
-		min-height: 100%;
-		margin-top: 0;
-		padding-top: 15%;
-	}
 	
-	.plan-izq h2{
-		margin-bottom: 3%;
-	}
-
-	.plan-izq p{
-		padding: 0 20%;
-	}
-	
-	.plan-der{
-		height: 100%;
-	}
-
-	.plan-der-top, .plan-der-bottom{
-		padding-top: 17%;
-		height: 50%;
-	}
-	
-	.plan-der-top h2, .plan-der-bottom h2{
-		margin-bottom: 3%;
-	}
-
-	.plan-der-top p, .plan-der-bottom p{
-		padding: 0 20%;
-	}
 
 	.ubicacioncontent{
 		padding:50px 60px;
 	}
+
+	.turismoheader{
+		padding-top: 40px;
+	}
+	
+	.parone{
+		padding-left:30px;
+	}
+	.partwo{
+		padding-left:15px;
+	}
+	.parone, .partwo{
+		padding-right:15px;
+		margin-bottom: 40px;
+	}
+
 }
 
 @media (min-width: 992px){

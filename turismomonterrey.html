@@ -67,20 +67,47 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-        <div class="col-sm-6 no-padding plan-izq">
-          <h2 class="text-center">Rio Túa</h2>
-          <p class="text-center">Ubicado a 1 km de Monterrey, sobre la vía subcuenca y atractivo turístico del municipio; acá es celebrado cada año el evento turístico y cultural Festival de Verano del río Túa del 30 de diciembre al 3 de enero.</p>
-        </div>
-        <div class="col-sm-6 no-padding plan-der">
-          <div class="col-xs-12 plan-der-top">
-            <h2 class="text-center">Caño Grande</h2>
-            <p class="text-center">Piscina natural ubicada a un kilómetro del municipio, vía Monterrey-Yopal</p>
+        <div class="turismocover col-xs-12"></div>
+        <div class="col-xs-12 whitebg">
+          <div class="container planes">
+            <h1 id="startchange" class="text-center turismoheader">TURISMO EN MONTERREY</h1>
+            <p class="text-center hero">Experiencia que debes vivir, </p>
+            <div class="col-md-6 parone">
+              <p>Are you looking for a unique place to hold your events in Formentera? If you want your wedding, conference, celebration or special occasion to be a great success, Cala Saona Hotel & Spa guarantees professionalism, good service and excellent organisation. We are by your side from the first moment, advising you in detail about each and every one of the aspects related to your event. Years of experience show our organisational ability: we will make your celebration at the hotel truly special, taking the greatest care of preparations</p>
+            </div>
+            <div class="col-md-6 partwo">
+              <p>, taking care of their development and always seeking the satisfaction of attendees and our clients. From the privileged location of the hotel, you have a perfect environment for holding your special occasions. Along with the excellent menu of our restaurant, the comfort of the facilities and the good service of the team, at Cala Saona Hotel & Spa you have the perfect place for your events in Formentera.</p>
+            </div>
+            <div class="col-xs-12 plan">
+              <div class="col-md-8">
+                <img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/imagen-monterrey-2.jpg">
+              </div>
+              <div class="col-md-4">
+                <h2 class="text-center">Rio Túa</h2>
+                <p class="text-center">Ubicado a 1 km de Monterrey, sobre la vía subcuenca y atractivo turístico del municipio; acá es celebrado cada año el evento turístico y cultural Festival de Verano del río Túa del 30 de diciembre al 3 de enero.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 plan">
+              <div class="col-md-8">
+                <img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/imagen-monterrey-2.jpg">
+              </div>
+              <div class="col-md-4">
+                <h2 class="text-center">Caño Grande</h2>
+                <p class="text-center">Piscina natural ubicada a un kilómetro del municipio, vía Monterrey-Yopal</p>
+              </div>
+            </div>
+            <div class="col-xs-12 plan lastplan">
+              <div class="col-md-8">
+                <img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/cannedhead.hotelmontserrat/imagen-monterrey-2.jpg">
+              </div>
+              <div class="col-md-4">
+                <h2 class="text-center">La Roca</h2>
+              <p class="text-center">A solo cinco minutos del centro del Municipio se puede disfrutar de las aguas naturales y cristalinas de esta piscina natural.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-12 plan-der-bottom">
-            <h2 class="text-center">La Roca</h2>
-            <p class="text-center">A solo cinco minutos del centro del Municipio se puede disfrutar de las aguas naturales y cristalinas de esta piscina natural.</p>
-          </div>
         </div>
+        
         <footer class="footer-nfixed col-xs-12 no-padding footermarginsmall">
           <div class="col-xs-6 col-sm-3 col-sm-offset-3 footer-left hidden-xs">
             <img class="center-block img-height-responsive" src="img/logohotel2.svg">
@@ -93,7 +120,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript">
-          $(document).ready(function(){   
+          $(document).ready(function(){  
+             
              if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               // some code..
              } else {    
@@ -103,6 +131,7 @@
                   if (startchange.length){
                       $(document).scroll(function() { 
                           scroll_start = $(this).scrollTop();
+                          console.log(scroll_start);
                           if(scroll_start > offset.top) {
                             $(".navbar-default").css('background-color', '#fff');
                             $(".navbar-default a").css('color', '#2A7571');
