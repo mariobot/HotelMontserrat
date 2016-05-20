@@ -769,7 +769,16 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	z-index:2;
 	height:190px;
 }
+
+.plan-wrapper{
+	overflow: hidden;
+}
+
 .plan{
+	position: absolute;
+	top:20%;
+	text-align: center;
+	color:#FFF;
 	margin-bottom: 40px;
 }
 
