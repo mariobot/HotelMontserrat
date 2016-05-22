@@ -160,6 +160,10 @@ p{
     background-color: #2B7672;
 }
 
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 .brand{
 	width:155px;
 	background-color: #FFF;
