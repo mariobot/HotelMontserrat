@@ -160,9 +160,6 @@ p{
     background-color: #2B7672;
 }
 
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
 
 .brand{
 	width:155px;
@@ -833,6 +830,11 @@ a.brandh, a.brandh:hover, a.brandh:focus, a.brandh:active{
 	.navbar-default .navbar-nav > li > a:hover{
 		color:#FFF;
 	}
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+
 	
 	.brand{
 		width:125px
