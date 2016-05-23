@@ -54,7 +54,7 @@
         $mail->Host = "smtp.zoho.com";
         $mail->Port = 587; 
         $mail->SMTPDebug = 1;     
-        $mail->Username = "reserva@hotelmontserrat.com";
+        $mail->Username = "reservas@hotelmontserrat.com";
         $mail->Password = "reservas123";
 
         
