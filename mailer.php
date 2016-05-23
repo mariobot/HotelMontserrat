@@ -36,7 +36,7 @@
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = "tls";      // Connect using a TLS connection  
+        $mail->SMTPSecure = "ssl";      // Connect using a TLS connection  
         
         //$mail->Host = "smtp.gmail.com";  //Gmail SMTP server address
         //$mail->Port = 587;  //Gmail SMTP port
@@ -52,13 +52,13 @@
         //$mail->Password = "c0e6d64d-1707-4489-b606-756c77d33633";
         
         $mail->Host = "smtp.zoho.com";
-        $mail->Port = 587; 
+        $mail->Port = 465; 
         $mail->SMTPDebug = 1;     
         $mail->Username = "reservas@hotelmontserrat.com";
         $mail->Password = "reservas123";
 
         
-        $mail->SetFrom($email, $name);
+        $mail->SetFrom("reservas@hotelmontserrat.com", "Reserva");
         $mail->Subject = 'Contacto';
         $mail->MsgHTML($email_content);
         $mail->AddAddress('reservas@hotelmontserratplaza.com', 'Contacto');
