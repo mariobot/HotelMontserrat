@@ -51,10 +51,11 @@
         //$mail->Username = "c0e6d64d-1707-4489-b606-756c77d33633";
         //$mail->Password = "c0e6d64d-1707-4489-b606-756c77d33633";
         
-        $mail->Host = "smtp.mailgun.org";
+        $mail->Host = "smtp.zoho.com";
+        $mail->Port = 587; 
         $mail->SMTPDebug = 1;     
-        $mail->Username = "postmaster@app06e91b1fd56142ed9f972b3ac924ae69.mailgun.org";
-        $mail->Password = "1d5943083da97469eb4ef4b88cf035bf";
+        $mail->Username = "reserva@hotelmontserrat.com";
+        $mail->Password = "reservas123";
 
         
         $mail->SetFrom($email, $name);
