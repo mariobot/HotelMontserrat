@@ -58,7 +58,7 @@
         $mail->Password = "reservas123";
 
         
-        $mail->SetFrom("reservas@hotelmontserrat.com", "Reserva");
+        $mail->SetFrom("reservas@hotelmontserratplaza.com", "Reserva");
         $mail->Subject = 'Contacto';
         $mail->MsgHTML($email_content);
         $mail->AddAddress('reservas@hotelmontserratplaza.com', 'Contacto');
