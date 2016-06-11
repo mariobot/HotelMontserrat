@@ -11,6 +11,14 @@ RewriteRule ^planesmonterrey$ turismomonterrey.html [NC,L]
 RewriteRule ^galeria$ galeria.html [NC,L]
 RewriteRule ^reservas$ reservas.html [NC,L]
 
+# Fonts
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot 
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
+
 # compress text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
@@ -24,6 +32,9 @@ AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 AddOutputFilterByType DEFLATE image/svg+xml
 AddOutputFilterByType DEFLATE image/svg
+
+# Compress compressible fonts
+AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype 
 
 # Or, compress certain file types by extension:
 <files *.html>
@@ -45,6 +56,14 @@ ExpiresByType application/javascript "access 1 month"
 ExpiresByType text/x-javascript "access 1 month"
 ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
+
+# Add a far future Expires header for fonts
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+ExpiresByType application/x-font-opentype "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+
 ExpiresDefault "access 2 days"
+
 </IfModule>
 ## EXPIRES CACHING ##
